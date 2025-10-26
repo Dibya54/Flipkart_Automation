@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Flipkart-MasterSuite" parallel="tests" thread-count="4">
+    <listeners>
+        <listener class-name="com.flipkart.TestComponents.ListerForReports"/>
+    </listeners>
+
+    <test name="Excel Tests">
+        <classes>
+            <class name="com.flipkart.Tests.ExcelDrivenTest"/>
+        </classes>
+    </test>
+
+    <test name="Filter Tests">
+        <classes>
+            <class name="com.flipkart.Tests.filterValidationTest"/>
+            <class name="com.flipkart.Tests.filterValidatione2e"/>
+        </classes>
+    </test>
+
+    <test name="Hover Tests">
+        <classes>
+            <class name="com.flipkart.Tests.LinkAndHoverValidationTest"/>
+        </classes>
+    </test>
+
+    <test name="Order Flow Tests">
+        <classes>
+            <class name="com.flipkart.Tests.orderFlowFlipkart"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Flipkart-OrderSuite">
+    <test name="Order Flow Tests">
+        <classes>
+            <class name="com.flipkart.Tests.orderFlowFlipkart"/>
+        </classes>
+    </test>
+</suite>
